@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="645.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <TableView fx:id="persontable" layoutX="37.0" layoutY="35.0" prefHeight="307.0" prefWidth="455.0">
+        <columns>
+          <TableColumn fx:id="personidcol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="personnamecol" prefWidth="142.0" text="Name" />
+            <TableColumn fx:id="personemailcol" minWidth="8.0" prefWidth="119.0" text="Email" />
+            <TableColumn fx:id="personstatuscol" minWidth="8.0" prefWidth="119.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="513.0" layoutY="96.0" mnemonicParsing="false" onMouseClicked="#deletebuttonpressed" text="Delete" />
+      <Text layoutX="251.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a Person" wrappingWidth="157.9482421875" />
+      <Text layoutX="80.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="157.9482421875" />
+      <Text layoutX="80.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="157.9482421875" />
+      <Text layoutX="80.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="157.9482421875" />
+      <TextField fx:id="nametextfield" layoutX="204.0" layoutY="418.0" promptText="Name" />
+      <TextField fx:id="emailtextfield" layoutX="204.0" layoutY="452.0" promptText="Email" />
+      <ChoiceBox fx:id="statuschoicebox" layoutX="204.0" layoutY="490.0" prefWidth="150.0" />
+      <Button layoutX="220.0" layoutY="543.0" mnemonicParsing="false" onMouseClicked="#mousebuttonclicked" text="Add" />
+   </children>
+</AnchorPane>
